@@ -18,13 +18,12 @@ class UI {
         const div = document.createElement("div");
         div.className = "";
         div.innerHTML = `
-            <div class="card m-2">
-                <p id="food-text">${food.food_name}</p>
+            <div class="card m-1">
+                <p id="food-text" class="card-text">${food.food_name}</p>
             </div>
         `
         foodContainer.append(div);
     }
-
 }
 
 export default UI;

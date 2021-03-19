@@ -12,6 +12,12 @@
 </head>
 <body>
 
+    <!-- Loading screen Start-->
+    <div class="loader_bg">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <!-- Loading screen End-->
+
     <!-- Main Section Start-->
     <section class="main-section">
         <h1 class="h1 p-4">¿Que comemos hoy?</h1>
@@ -23,5 +29,15 @@
     </section>
     <!-- Main Section End-->
 
+
+    <!-- Script Loader -->
+    <script>
+        let pageLoader = document.querySelector(".loader_bg");
+        window.addEventListener("load", function() {
+            setTimeout(() => {
+                pageLoader.parentElement.removeChild(pageLoader);
+            }, 500);
+        });
+    </script>
 </body>
 </html>
